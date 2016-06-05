@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   resources :users
+  resources :products
 
   get 'admin' => 'admin#index'
   controller :sessions do
